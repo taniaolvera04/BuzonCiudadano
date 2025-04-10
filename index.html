@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUZÓN CIUDADANO</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-center">
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+            <img src="Buzon/img/logo.png" alt="Logo" width="180" height="60" class="d-inline-block align-text-top m-auto">
+            <span class="navbar-brand m-auto w-100 h1">BUZÓN CIUDADANO DIGITAL</span>
+        </div>
+    </nav><br><br>
+
+    <h2>SERVICIOS MUNICIPALES PRINCIPALES</h2>
+
+  <br>
+  <br>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-3 col-12 mb-4">
+                <div class="card text-center">
+                    <div class="card-header">
+                        AGUA POTABLE
+                    </div>
+                    <div class="card-body">
+                        <img src="Buzon/img/a.png" alt="" height="200px">
+                        <div class="mt-3">
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#descAgua">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-12 mb-4">
+                <div class="card text-center">
+                    <div class="card-header">
+                        ALUMBRADO PÚBLICO
+                    </div>
+                    <div class="card-body">
+                        <img src="Buzon/img/al.jpg" alt="" height="200px">
+                        <div class="mt-3">
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#descAlum">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-12 mb-4">
+                <div class="card text-center">
+                    <div class="card-header">
+                        PAVIMENTACIÓN
+                    </div>
+                    <div class="card-body">
+                        <img src="Buzon/img/pav.png" alt="" height="200px">
+                        <div class="mt-3">
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#descPavi">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-12 mb-4">
+                <div class="card text-center">
+                    <div class="card-header">
+                        MANTENIMIENTO DE ÁREAS VERDES
+                    </div>
+                    <div class="card-body">
+                        <img src="Buzon/img/areas.png" alt="" height="200px">
+                        <div class="mt-3">
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#descAreas">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <button class="btn btn-light" id="se" onclick="window.location.href='Buzon/seccion.html'">
+        <img src="Buzon/img/bloquear.png" alt="" height="30px">
+    </button>
+    
+
+
+
+  <!-- Modal -->
+<div class="modal fade" id="descAgua" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm"> <!-- Modal más pequeño -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 w-100 text-center" id="exampleModalLabel">AGUA POTABLE</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Imagen antes de la descripción -->
+                <img src="Buzon/img/aguapotable.jpg"  class="img-fluid mb-3">
+                
+                <p>El servicio de agua potable es proporcionado por el municipio, garantizando el acceso al agua limpia y tratada para los habitantes. Si tienes alguna solicitud o inconveniente relacionado con este servicio, puedes gestionarlo aquí.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Alumbrado Público -->
+<div class="modal fade" id="descAlum" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm"> <!-- Modal más pequeño -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 w-100 text-center" id="exampleModalLabel">ALUMBRADO PÚBLICO</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Imagen antes de la descripción -->
+                <img src="Buzon/img/alumbrado.png"  class="img-fluid mb-3">
+                
+                <p>El servicio de alumbrado público es proporcionado por el municipio para garantizar la seguridad y el bienestar de los habitantes, asegurando el correcto funcionamiento de las luminarias en calles y espacios públicos. Si tienes alguna solicitud o inconveniente relacionado con este servicio, puedes gestionarlo aquí.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Pavimentación -->
+<div class="modal fade" id="descPavi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm"> <!-- Modal más pequeño -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 w-100 text-center" id="exampleModalLabel">PAVIMENTACIÓN</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Imagen antes de la descripción -->
+                <img src="Buzon/img/pavimentacion.jpg" class="img-fluid mb-3">
+                
+                <p>La pavimentación de calles y avenidas es una prioridad para mejorar la infraestructura urbana y proporcionar comodidad a los habitantes. Este servicio busca la reparación y mejora de las vías públicas, facilitando la movilidad. Si tienes alguna solicitud o inconveniente relacionado con este servicio, puedes gestionarlo aquí.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Mantenimiento de Áreas Verdes -->
+<div class="modal fade" id="descAreas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm"> <!-- Modal más pequeño -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 w-100 text-center" id="exampleModalLabel">MANTENIMIENTO DE ÁREAS VERDES</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Imagen antes de la descripción -->
+                <img src="Buzon/img/areasverdes.jpg" class="img-fluid mb-3">
+                
+                <p>El mantenimiento de áreas verdes es esencial para preservar la naturaleza urbana, promoviendo espacios recreativos y mejorando la calidad del aire. Este servicio se enfoca en la poda, riego y embellecimiento de parques y jardines públicos. Si tienes alguna solicitud o inconveniente relacionado con este servicio, puedes gestionarlo aquí.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="bootstrap/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>
